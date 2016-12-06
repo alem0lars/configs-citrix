@@ -1,10 +1,8 @@
 elems:
 
-  - src: elems/(.+)$
-    dst: ~/.ICAClient/<1>
-    only:
-      features:
-        - citrix_receiver
+  - src:  ^(.+)$
+    dst:  ~/.ICAClient/<1>
+    only: f?citrix_receiver
 
 
 # vim: set filetype=eruby.yaml :
